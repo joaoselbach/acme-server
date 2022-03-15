@@ -127,6 +127,7 @@ const verbs = [
       //Geração da imagem com tamanho fixo de 300x300
       const id = products.length + 1;
       const url = `https://picsum.photos/id/${id}/300/300`
+      const largeUrl = `https://picsum.photos/id/${id}/530/600`
   
       //Verifica se existe um produto com o mesmo nome antes de prosseguir com a inserção
       if (!exist) {
@@ -137,6 +138,7 @@ const verbs = [
           price,
           formatedPrice,
           image: url,
+          largeImage: largeUrl,
         });
       }
     }
